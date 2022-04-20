@@ -1,0 +1,54 @@
+
+#bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+#main{
+    position: absolute;
+    z-index: 99;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+    color: black;
+    font-family: Times;
+    margin-top: 110px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+input {
+    width: 302px;
+    height: 43px;
+    border: 1px #6a6f73 solid;
+    background: rgb(24, 23, 23, 0);
+    margin-left: 10px;
+}
+button {
+    width: 302px;
+    height: 43px;
+    border: 1px #6a6f73 solid;
+    background: rgb(24, 23, 23, 0);
+    margin-left: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    -webkit-user-drag: none;
+}
+#checkUser{
+    position: absolute;
+    left: 805px;
+    color: red;
+}
+p{
+    font-size: 10px;
+    color: red;
+}

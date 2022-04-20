@@ -1,0 +1,81 @@
+
+a{
+    display:block;
+    width: 130px;
+    text-decoration: none;
+}
+a:link {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#logo{
+    position: absolute;
+    left: -800px;
+}
+#logo img{
+    -webkit-user-drag: none;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+#me{
+    position: relative;
+    margin-bottom: 60px;
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+#me img{
+    width: 50px;
+    height: 50px;
+}
+#votesList {
+    position: relative;
+    text-align: center;
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 60px;
+}
+.bod{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 130px;
+    height: 400px;
+}
+.oneOfVotes div{
+    width: 130px;
+}
+#aaaa{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+
+    margin-top: -18px;
+}
+#canvas{
+    position: fixed;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+    pointer-events: none;
+}
+body{
+    width: 100%;
+}

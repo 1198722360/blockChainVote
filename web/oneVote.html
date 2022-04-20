@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基于区块链的可视化投票系统</title>
+    <link rel="shortcut icon" href="resources/tl.ico">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.highcharts.com.cn/highcharts/highcharts.js"></script>
+    <script src="https://cdn.highcharts.com.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="script/loadCandidates.js"></script>
+    <style>
+        body{
+            background-color: #242222;
+        }
+        #main{
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+            background-color: bisque;
+            opacity: 0.8;
+            border-radius: 5px;
+            z-index: 999;
+            line-height:2;
+            font-size: 23px;
+        }
+        #main:hover{
+            opacity: 1;
+        }
+        #charts{
+            margin: 30px;
+        }
+        .block{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #title{
+            border-bottom:1px solid #000
+        }
+        #candidatesBlock{
+         text-align: left;
+        }
+        #canvas{
+            position: fixed;
+            top: 20px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="title" class="block">
+
+        </div>
+        <div id="body" class="block">
+
+        </div>
+        <div id="candidatesBlock" class="block">
+
+        </div>
+        <div style="height: 100px">
+
+        </div>
+        <!--图表区-->
+        <div id="charts">
+            <button id="txt">条形图</button><!--条形图-->
+            <button id="sxt">扇形图</button><!--扇形图-->
+        </div>
+
+
+        <div style="height: 30px">
+
+        </div>
+    </div>
+
+
+
+
+    <canvas id="canvas"></canvas>
+</body>
+<script src="script/OOVanimate.js"></script>
+</html>

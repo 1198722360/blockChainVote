@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基于区块链的可视化投票系统</title>
+    <link rel="shortcut icon" href="resources/tl.ico">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="script/onload.js"></script>
+    <script src="script/searchScript.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/daohang.css"><!--导航栏（全部投票，发起投票。。。。。）-->
+</head>
+<body>
+<div id="logo">
+    <img src="resources/logo.png" alt=""  >
+</div>
+<div id="me">
+    <a href="login.html">
+        <img src="resources/loginLogo.png"  alt="">
+    </a>
+</div>
+
+
+<div id="h">
+    <nav class="nav">
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-1" checked>
+        <label id="allVotes" class="nav-item" for="nav-item-opt-1">全部投票</label>
+
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-2">
+        <label id="myVotes" class="nav-item" for="nav-item-opt-2">我发起的投票</label>
+
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-3">
+        <label id="createAVote" class="nav-item" for="nav-item-opt-3">新建一个投票</label>
+
+        <div class="tracker"></div>
+    </nav>
+    <div style="display: inline-block">
+        <input type="image" id="searchLogo" src="resources/searchLogo.png">
+    </div>
+</div>
+<div id="aaaa">
+    <div>
+        <ul id="category"></ul>
+    </div>
+        <div id="votesList">
+        </div>
+
+</div>
+<canvas id="canvas"></canvas>
+</body>
+<script src="script/OOVanimate.js"></script>
+</html>
