@@ -1,1 +1,1 @@
-# blockChainVote
+# 基于区块链的可视化投票系统
